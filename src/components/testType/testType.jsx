@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import Covid from '../../testPages/covid';
 // import Hiv from '../../testPages/hiv';
 // import Diabetes from '../../testPages/diabetes';
@@ -10,19 +10,19 @@ function TestType() {
     <>
     <ul>
       <li>
-        <Link to={"./covid"}>COVID</Link>
+        <Link to={"/covid"}>COVID</Link>
       </li>
     
       <li>
-        <Link to={"./hiv"}>HIV</Link>
+        {/* <Link to={"/hiv"}>HIV</Link> */}
       </li>
     
       <li>
-        <Link to={"./diabetes"}>DIABETES</Link>
+        <Link to={"/diabetes"}>DIABETES</Link>
       </li>
     
       <li>
-        <Link to={"./tb"}>TB</Link>
+        <Link to={"/tb"}>TB</Link>
       </li>
     </ul>
     </>
