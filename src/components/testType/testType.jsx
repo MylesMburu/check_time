@@ -1,23 +1,33 @@
-import React from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import Covid from '../../testPages/covid';
-import Hiv from '../../testPages/hiv';
-import Diabetes from '../../testPages/diabetes';
-import Tb from '../../testPages/tb';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import Covid from '../../testPages/covid';
+// import Hiv from '../../testPages/hiv';
+// import Diabetes from '../../testPages/diabetes';
+// import Tb from '../../testPages/tb';
 
-const TestType = () => {
+function TestType() {
   return (
-    <Router>
-
-    <div>testType</div>
-    <Route path='/covid' component={Covid}/>
-    <Route path='/hiv' component={Hiv }/>
-    <Route path='/tb' component={Diabetes }/>
-    <Route path='/diabetes' component={Tb }/>
-
-    </Router>
+    <>
+    <ul>
+      <li>
+        <Link to={"./covid"}>COVID</Link>
+      </li>
     
-  )
+      <li>
+        <Link to={"./hiv"}>HIV</Link>
+      </li>
+    
+      <li>
+        <Link to={"./diabetes"}>DIABETES</Link>
+      </li>
+    
+      <li>
+        <Link to={"./tb"}>TB</Link>
+      </li>
+    </ul>
+    </>
+      
+  );
 }
 
-export default TestType
+export default TestType;

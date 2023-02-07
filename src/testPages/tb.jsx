@@ -2,8 +2,10 @@ import React from 'react'
 
 const Tb = () => {
   return (
-    <div>T</div>
-  )
+<>
+<h1>TB</h1>
+</> 
+ )
 }
 
 export default Tb
