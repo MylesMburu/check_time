@@ -14,7 +14,7 @@ function TestType() {
       </li>
     
       <li>
-        {/* <Link to={"/hiv"}>HIV</Link> */}
+        <Link to={"/hiv"}>HIV</Link>
       </li>
     
       <li>
