@@ -10,24 +10,16 @@ function TestType() {
   return (
     <>
     <div className="list">
-    <ul>
-      <li className='btn'>
-        <Link to={"/covid"}>COVID</Link>
-      </li>
     
-      <li className='btn'>
-        <Link to={"/hiv"}>HIV</Link>
-      </li>
-    
-      <li className='btn'>
-        <Link to={"/diabetes"}>DIABETES</Link>
-      </li>
-    
-      <li className='btn'>
-        <Link to={"/tb"}>TB</Link>
-      </li>
-    </ul>
-    </div>
+        <Link to={"/covid"} className='btn'>COVID</Link>
+      
+        <Link to={"/hiv"} className='btn'>HIV</Link>
+      
+        <Link to={"/diabetes"} className='btn'>DIABETES</Link>
+      
+        <Link to={"/tb"} className='btn'>TB</Link>
+      
+    </div> 
     </>
       
   );
