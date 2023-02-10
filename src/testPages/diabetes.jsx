@@ -1,4 +1,5 @@
 import React from 'react'
+import './diabetes.css'
 
 const Diabetes = () => {
   return (
@@ -22,6 +23,7 @@ const Diabetes = () => {
       {/* <label htmlFor=""></label>
       <input type="text"  name='name'/> */}
 
+      <button>Submit</button>
 
     </form>
     </>

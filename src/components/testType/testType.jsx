@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './testType.css'
 // import Covid from '../../testPages/covid';
 // import Hiv from '../../testPages/hiv';
 // import Diabetes from '../../testPages/diabetes';
@@ -8,23 +9,25 @@ import { Link } from 'react-router-dom';
 function TestType() {
   return (
     <>
+    <div className="list">
     <ul>
-      <li>
+      <li className='btn'>
         <Link to={"/covid"}>COVID</Link>
       </li>
     
-      <li>
+      <li className='btn'>
         <Link to={"/hiv"}>HIV</Link>
       </li>
     
-      <li>
+      <li className='btn'>
         <Link to={"/diabetes"}>DIABETES</Link>
       </li>
     
-      <li>
+      <li className='btn'>
         <Link to={"/tb"}>TB</Link>
       </li>
     </ul>
+    </div>
     </>
       
   );

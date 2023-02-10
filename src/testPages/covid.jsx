@@ -1,4 +1,5 @@
 import React from 'react'
+import './covid.css'
 
 const Covid = () => {
   return (
@@ -21,7 +22,7 @@ const Covid = () => {
 
       {/* <label htmlFor=""></label>
       <input type="text"  name='name'/> */}
-
+      <button>Submit</button>
 
     </form>
     </>

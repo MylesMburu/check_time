@@ -1,4 +1,5 @@
 import React from 'react'
+import './tb.css'
 
 const Tb = () => {
   return (
@@ -21,6 +22,7 @@ const Tb = () => {
 
       {/* <label htmlFor=""></label>
       <input type="text"  name='name'/> */}
+      <button>Submit</button>
 
 
     </form>

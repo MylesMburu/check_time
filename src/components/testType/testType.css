@@ -1,0 +1,19 @@
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.btn{
+    width: 150px;
+    display: inline-block;
+    padding: 0.75remm 1.2remm;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #46B3E6;
+    color: white;
+    border: 1px solid #46B3E6;
+    transition: all 400ms ease;
+    text-align: center;
+}
