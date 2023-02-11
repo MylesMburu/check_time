@@ -1,31 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
+import PhoneInput from 'react-phone-number-input';
+// import 'react-phone-number-input/tb.css';
 import './tb.css'
 
-const Tb = () => {
+function Tb () {
+  // const [value,setValue] = useState();
   return (
 <>
-<form action="">
+<div className="container">
+    <form action="">
       <label htmlFor="name">Name</label>
       <input type="text"  name='name'/>
 
       <label htmlFor="natId">National ID</label>
-      <input type="text"  name='natId'/>
+      <input type="number"  name='natId'/>
 
       <label htmlFor="testNo">Test Number</label>
-      <input type="text"  name='testNo'/>
+      <input type="number"  name='testNo'/>
 
       <label htmlFor="phoneNo">Phone Number</label>
-      <input type="tel"  name='phoneNo'/>
+       <input type="number"  name='phoneNo'/>
+
 
       <label htmlFor="date">Date</label>
       <input type="date"  name='date'/>
 
-      {/* <label htmlFor=""></label>
-      <input type="text"  name='name'/> */}
       <button>Submit</button>
 
-
     </form>
+
+    </div>
 </> 
  )
 }
