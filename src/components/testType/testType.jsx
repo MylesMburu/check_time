@@ -11,15 +11,15 @@ function TestType() {
     <>
     <div className="list">
     
-        <Link to={"/covid"} className='btn'>COVID</Link>
-      
-        <Link to={"/hiv"} className='btn'>HIV</Link>
-      
-        <Link to={"/diabetes"} className='btn'>DIABETES</Link>
-      
-        <Link to={"/tb"} className='btn'>TB</Link>
-      
-    </div> 
+    <Link to={"/covid"} className='btn'>COVID</Link>
+  
+    <Link to={"/hiv"} className='btn'>HIV</Link>
+  
+    <Link to={"/diabetes"} className='btn'>DIABETES</Link>
+  
+    <Link to={"/tb"} className='btn'>TB</Link>
+  
+</div> 
     </>
       
   );
