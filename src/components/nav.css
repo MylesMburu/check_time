@@ -1,0 +1,10 @@
+.title{
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    margin: 0%;
+    height: 4rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+}
