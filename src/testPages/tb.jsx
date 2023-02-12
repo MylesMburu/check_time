@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PhoneInput from 'react-phone-number-input';
 // import 'react-phone-number-input/tb.css';
 import './tb.css'
 
@@ -25,7 +24,7 @@ function Tb () {
       <label htmlFor="date">Date</label>
       <input type="date"  name='date'/>
 
-      <button>Submit</button>
+      <button type='submit'>Submit</button>
 
     </form>
 

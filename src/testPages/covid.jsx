@@ -21,7 +21,7 @@ const Covid = () => {
       <label htmlFor="date">Date</label>
       <input type="date"  name='date'/>
 
-      <button>Submit</button>
+      <button type='submit'>Submit</button>
 
     </form>
 
