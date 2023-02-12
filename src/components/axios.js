@@ -1,5 +1,7 @@
 import axios from axios;
 
+const phoneNo = document.getElementById('phoneNo').value;
+
 const sendAirtime = async () => {
     try {
       const response = await axios.post('https://api.africastalking.com/version1/airtime/send',

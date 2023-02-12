@@ -17,7 +17,7 @@ const Hiv = () => {
       <input type="number"  name='testNo'/>
 
       <label htmlFor="phoneNo">Phone Number</label>
-      <input type="tel"  name='phoneNo'/>
+      <input type="tel" id="phoneNo" name='phoneNo'/>
 
       <label htmlFor="date">Date</label>
       <input type="date"  name='date'/>

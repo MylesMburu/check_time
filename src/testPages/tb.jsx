@@ -18,7 +18,7 @@ function Tb () {
       <input type="number"  name='testNo'/>
 
       <label htmlFor="phoneNo">Phone Number</label>
-       <input type="number"  name='phoneNo'/>
+       <input type="number" id="phoneNo" name='phoneNo'/>
 
 
       <label htmlFor="date">Date</label>
