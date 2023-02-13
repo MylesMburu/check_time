@@ -9,17 +9,21 @@ const Covid = () => {
         'https://api.sandbox.africastalking.com/version1/airtime/send',
         {
           username: 'sandbox',
-          recipients: [{ phoneNumber: phoneNo, amount: 'KES 5' }],
+          recipients: [{ phoneNumber: phoneNo, currencyCode: "KES",
+          amount: 5 }],
           message: 'Thanks for your support!',
           enqueue: true
         },
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            apiKey:
-              'c88c6a64b9fec676fdb1d4df6cf31e9180e89be8174df6178b0141786bbce929'
+            'apiKey':
+              '8aa287ffda67312cee36e9a29ac1699df63832671812c302d08169c4b63eee4a',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
           }
-        }
+        },
+        console.log('Success!')
       );
 
       console.log(response.data);
@@ -31,6 +35,7 @@ const Covid = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const phoneNo = event.target.phoneNo.value;
+    console.log(phoneNo)
     sendAirtime(phoneNo);
   };
 
