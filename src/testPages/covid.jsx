@@ -6,21 +6,18 @@ const Covid = () => {
   const sendAirtime = async (phoneNo) => {
     try {
       const response = await axios.post(
-        '/version1/airtime/send',
+        '/api/version1/airtime/send',
         {
           username: 'sandbox',
-          recipients: [{ phoneNumber: phoneNo, currencyCode: "KES",
-          amount: 5 }],
-          message: 'Thanks for your support!',
-          enqueue: true
+          recipients: [{ "phoneNumber": phoneNo, "amount":"KES 10.00" }],
+          message: 'Thanks for your support!'
         },
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'apiKey':
-              '8aa287ffda67312cee36e9a29ac1699df63832671812c302d08169c4b63eee4a',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+            apiKey:
+              'a9ed9e6612622722c4a79220b8b770120f87ab4b0398cbbe2041a02d577aa21c',
+           
           }
         },
         console.log('Success!')
