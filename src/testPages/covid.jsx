@@ -6,7 +6,7 @@ const Covid = () => {
   const sendAirtime = async (phoneNo) => {
     try {
       const response = await axios.post(
-        'https://api.sandbox.africastalking.com/version1/airtime/send',
+        '/version1/airtime/send',
         {
           username: 'sandbox',
           recipients: [{ phoneNumber: phoneNo, currencyCode: "KES",
