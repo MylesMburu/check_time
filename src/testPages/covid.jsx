@@ -10,7 +10,11 @@ const Covid = () => {
       const response = await axios.post('api/version1/airtime/send',
         {
           username: 'myles',
-          recipients: [{ "phoneNumber": phoneNo, "amount":"KES 5.00" }],
+          recipients: [{ 
+            "phoneNumber": phoneNo,
+           currencyCode: "KES",
+          amount: "100" 
+        }],
           message: 'Thank you for gettting tested with us'
         } ,
         {
