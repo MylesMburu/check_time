@@ -34,14 +34,17 @@ const Covid = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const phoneNo = event.target.phoneNo.value;
+
     console.log(phoneNo)
     sendAirtime(phoneNo);
+    // const element = document.getElementById(" form ");
+    event.target.reset()
   }; 
 
   return (
     <>
       <div className="container">
-        <form onSubmit={handleSubmit}>
+        <form id='form' onSubmit={handleSubmit} >
           <label htmlFor="name">Name</label>
           <input type="text" name="name" />
 
