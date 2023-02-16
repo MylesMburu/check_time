@@ -1,12 +1,12 @@
 import React from 'react'
 import './covid.css'
-import axios from 'axios';
+// import axios from 'axios';
+import instance from '../axiosInstance';
 
 const Covid = () => {
   const sendAirtime = async (phoneNo) => {
     try {
-      const response = await axios.post(
-        '/api/version1/airtime/send',
+      const response = await instance.post('api/version1/airtime/send',
         {
           username: 'sandbox',
           recipients: [{ "phoneNumber": phoneNo, "amount":"KES 10.00" }],
