@@ -2,11 +2,12 @@ import React from 'react'
 import './covid.css'
 // import axios from 'axios';
 import instance from '../axiosInstance';
+import axios from 'axios';
 
 const Covid = () => {
   const sendAirtime = async (phoneNo) => {
     try {
-      const response = await instance.post('api/version1/airtime/send',
+      const response = await axios.post('api/version1/airtime/send',
         {
           username: 'myles',
           recipients: [{ "phoneNumber": phoneNo, "amount":"KES 5.00" }],
@@ -15,9 +16,7 @@ const Covid = () => {
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            apiKey:
-              '6f1e252ea22e185504ce3d23fc3c3a801a2459077a67420ea24d894b59447d7d',
-           
+            'apiKey': '6f1e252ea22e185504ce3d23fc3c3a801a2459077a67420ea24d894b59447d7d',
           }
         },
         
