@@ -8,15 +8,15 @@ const Covid = () => {
     try {
       const response = await instance.post('api/version1/airtime/send',
         {
-          username: 'sandbox',
-          recipients: [{ "phoneNumber": phoneNo, "amount":"KES 10.00" }],
+          username: 'myles',
+          recipients: [{ "phoneNumber": phoneNo, "amount":"KES 5.00" }],
           message: 'Thank you for gettting tested with us'
         } ,
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             apiKey:
-              'a9ed9e6612622722c4a79220b8b770120f87ab4b0398cbbe2041a02d577aa21c',
+              '6f1e252ea22e185504ce3d23fc3c3a801a2459077a67420ea24d894b59447d7d',
            
           }
         },
@@ -36,7 +36,7 @@ const Covid = () => {
     const phoneNo = event.target.phoneNo.value;
     console.log(phoneNo)
     sendAirtime(phoneNo);
-  };
+  }; 
 
   return (
     <>

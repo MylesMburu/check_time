@@ -4,7 +4,7 @@ export default function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://api.sandbox.africastalking.com',
+      target: 'https://api.africastalking.com/version1/airtime/send',
       changeOrigin: true,
     })
   );
