@@ -10,8 +10,8 @@ const Covid = () => {
         {
           username: 'sandbox',
           recipients: [{ "phoneNumber": phoneNo, "amount":"KES 10.00" }],
-          message: 'Thanks for your support!'
-        },
+          message: 'Thank you for gettting tested with us'
+        } ,
         {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -20,8 +20,10 @@ const Covid = () => {
            
           }
         },
+        
         console.log('Success!')
       );
+      console.log(typeof(phoneNo))
 
       console.log(response.data);
     } catch (error) {
